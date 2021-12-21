@@ -1,0 +1,70 @@
+&CONTROL
+    calculation = "bands"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "C:\Users\ROG\.burai\.pseudopot"
+/
+
+&SYSTEM
+    a                         =  6.65414e+00
+    c                         =  1.50690e+01
+    degauss                   =  1.00000e-02
+    ecutrho                   =  2.25000e+02
+    ecutwfc                   =  2.50000e+01
+    ibrav                     = 4
+    nat                       = 12
+    nbnd                      = 84
+    nspin                     = 2
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  2.00000e-01
+    starting_magnetization(2) =  0.00000e+00
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&BANDS
+    lsym           = .FALSE.
+    spin_component = 1
+/
+
+K_POINTS {tpiba_b}
+12
+gG     20
+M      20
+K      20
+gG     20
+A      20
+L      20
+H      20
+A      0
+L      20
+M      0
+K      20
+H      0
+
+ATOMIC_SPECIES
+W     183.84000  W.pbe-nsp-van.UPF
+Se     78.96000  Se.pbe-n-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+W       1.663542   0.960439  11.301713
+W       0.000007   3.841766  11.301713
+W       4.990612   0.960439  11.301713
+W       3.327077   3.841766  11.301713
+Se     -0.000007   1.920889  12.982941
+Se     -1.663542   4.802216  12.982941
+Se      3.327063   1.920889  12.982941
+Se      1.663528   4.802216  12.982941
+Se     -0.000007   1.920889   9.620485
+Se     -1.663542   4.802216   9.620485
+Se      3.327063   1.920889   9.620485
+Se      1.663528   4.802216   9.620485
+
+
