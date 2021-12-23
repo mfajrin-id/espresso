@@ -1,2 +1,2 @@
 # espresso
-the contents of this folder are quantum espresso calculations
+the contents of this repository are quantum espresso calculations
